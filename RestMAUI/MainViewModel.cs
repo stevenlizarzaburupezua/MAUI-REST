@@ -1,4 +1,4 @@
-﻿using Org.Apache.Http.Impl.Client;
+﻿ 
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -93,11 +93,11 @@ namespace RestMAUI
             });
 
         public ICommand DeleteUserCommand =>
-            new Command (async () => 
+            new Command(async () =>
             {
                 var url = $"{baseUrl}/users/10";
                 var response = await client.DeleteAsync(url);
-            })
+            });
 
     }
 }
