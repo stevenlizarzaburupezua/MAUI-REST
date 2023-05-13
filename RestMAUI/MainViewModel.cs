@@ -45,14 +45,12 @@ namespace RestMAUI
 
             });
 
-
         public ICommand GetSingleUserCommand =>
             new Command(async () =>
             {
                 var url = $"{baseUrl}/users/25";
                 var response = await client.GetStringAsync(url);
             });
-
 
         public ICommand AddUserCommand =>
             new Command(async () =>
